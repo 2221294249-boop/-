@@ -1,0 +1,18 @@
+{
+  "name": "research-skills",
+  "version": "0.1.0",
+  "description": "A pinned bundle of research ideation, literature, statistics, visualization, writing, polishing, peer-review, response, data, and paper-to-PPT skills.",
+  "author": {
+    "name": "2221294249-boop"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Research Skills",
+    "shortDescription": "Research workflows from topic selection to publication.",
+    "longDescription": "Bundles pinned third-party skills for scientific brainstorming, academic search, literature review, research orchestration, statistics, figures, Nature-style writing and polishing, reviewer response, data statements, and paper-to-PPT reporting.",
+    "developerName": "2221294249-boop",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Choose the most relevant bundled research skill for my task and explain which one you selected."
+  }
+}

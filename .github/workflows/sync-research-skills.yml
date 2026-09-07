@@ -1,0 +1,25 @@
+name: Sync research skills
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/sync-research-skills.yml"
+      - "sync-skills.sh"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Vendor pinned skills
+        shell: bash
+        run: bash ./sync-skills.sh
